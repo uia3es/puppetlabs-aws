@@ -1,4 +1,4 @@
-require 'aws-sdk-core'
+require 'aws-sdk'
 require 'puppetlabs_spec_helper/module_spec_helper'
 require 'webmock/rspec'
 require 'vcr'

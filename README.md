@@ -43,7 +43,7 @@ In the simplest case, this allows you to create new EC2 instances from Puppet co
 
 1. Install the retries gem and the Amazon AWS Ruby SDK gem, using the same Ruby used by Puppet. For Puppet 4.x and beyond, install the gems with this command:
 
-  '/opt/puppetlabs/puppet/bin/gem install aws-sdk-core retries'
+  '/opt/puppetlabs/puppet/bin/gem install aws-sdk retries'
 
 2. Set these environment variables for your AWS access credentials:
 

@@ -44,7 +44,7 @@ Amazonウェブサービスでは、サービスプラットフォームとな�
 
 1. Puppetと同じくRubyを使用してretries gemとAmazon AWS Ruby SDK gemをインストールします。Puppet 4.x以降の場合、gemのインストールには次のコマンドを使用します。
 
-  '/opt/puppetlabs/puppet/bin/gem install aws-sdk-core retries'
+  '/opt/puppetlabs/puppet/bin/gem install aws-sdk retries'
 
 2. AWSアクセス認証情報に応じて以下の環境変数を設定します。
 

@@ -1,4 +1,4 @@
-require 'aws-sdk-core'
+require 'aws-sdk'
 require 'mustache'
 require 'open3'
 
@@ -11,7 +11,7 @@ if ENV['PUPPET_AWS_USE_BEAKER'] and ENV['PUPPET_AWS_USE_BEAKER'] == 'yes'
     proj_root = File.expand_path(File.join(File.dirname(__FILE__), '..'))
     puppet_module_install(:source => proj_root, :module_name => 'aws')
 
-    on(default, puppet('resource package aws-sdk-core ensure=installed provider=puppet_gem'))
+    on(default, puppet('resource package aws-sdk ensure=installed provider=puppet_gem'))
     on(default, puppet('resource package retries ensure=installed provider=puppet_gem'))
 
     # install aws creds on SUT
